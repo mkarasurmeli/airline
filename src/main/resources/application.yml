@@ -1,0 +1,16 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    database_platform: org.hibernate.dialect.H2Dialect
+    show_sql: true
+  messages:
+    encoding: UTF-8
+    use-code-as-default-message: true  #in case of no message found then use the message code as message
